@@ -1,5 +1,6 @@
 from django.db import models
 from projects.models import Projects
+from django.contrib.auth.models import User
 
 
 class Navers(models.Model):
@@ -8,6 +9,7 @@ class Navers(models.Model):
     admission_date = models.DateField(auto_now_add=False)
     job_role = models.CharField(max_length=150)
     projects = models.ManyToManyField(Projects, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def get_projects(self):
         return ', '.join([str(p) for p in self.projects.all()])
