@@ -39,16 +39,16 @@ Aconselho usar o POSTMAN ou INSOMNIA para testar as rotas
 ## rotas
 as rotas disponiveis são: 
 
-#### conta 
+### conta 
 accounts/ => cria um usúario
 login/ => loga na aplicação e retorna o token para navegar
-#### navers
+### navers
 - GET navers/index/ => retornar lista de navers para um usuario caso ele tenha navers cadastrado
 - GET navers/<id>/show/ => retorna um naver especifico caso ele esteja ligado ao usúario que fez a requisição
 - POST navers/ => cria um naver ligado ao usuario que fez a requisição
 - PUT navers/<id>/ => atualiza os dados do naver caso ele exista e esteja ligado ao usúario que fez a requisição
 - DELETE navers/<id>/ => deleta um naver caso ele exista e esteja ligado ao usúario que fez a requisição
-#### projects
+### projects
 - GET projects/index/ => retornar lista de projetos para um usuario caso ele tenha projetos cadastrado
 - GET projects/<id>/show/ => retorna um projeto especifico caso ele exista e esteja ligado ao usúario que fez a requisição
 - POST projects/ => cria um projeto ligado ao usuario que fez a requisição
