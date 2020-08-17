@@ -44,16 +44,16 @@ as rotas disponiveis são:
 - login/ => loga na aplicação e retorna o token para navegar
 ### navers
 - GET navers/index/ => retornar lista de navers para um usuario caso ele tenha navers cadastrado
-- GET navers/<id>/show/ => retorna um naver especifico caso ele esteja ligado ao usúario que fez a requisição
+- GET navers/id/show/ => retorna um naver especifico caso ele esteja ligado ao usúario que fez a requisição
 - POST navers/ => cria um naver ligado ao usuario que fez a requisição
-- PUT navers/<id>/ => atualiza os dados do naver caso ele exista e esteja ligado ao usúario que fez a requisição
-- DELETE navers/<id>/ => deleta um naver caso ele exista e esteja ligado ao usúario que fez a requisição
+- PUT navers/id/ => atualiza os dados do naver caso ele exista e esteja ligado ao usúario que fez a requisição
+- DELETE navers/id/ => deleta um naver caso ele exista e esteja ligado ao usúario que fez a requisição
 ### projects
 - GET projects/index/ => retornar lista de projetos para um usuario caso ele tenha projetos cadastrado
-- GET projects/<id>/show/ => retorna um projeto especifico caso ele exista e esteja ligado ao usúario que fez a requisição
+- GET projects/id/show/ => retorna um projeto especifico caso ele exista e esteja ligado ao usúario que fez a requisição
 - POST projects/ => cria um projeto ligado ao usuario que fez a requisição
-- PUT projects/<id>/ => atualiza os dados do projeto caso ele exista e esteja ligado ao usúario que fez a requisição
-- DELETE projects/<id>/ => deleta um projeto caso ele exista e esteja ligado ao usúario que fez a requisição
+- PUT projects/id/ => atualiza os dados do projeto caso ele exista e esteja ligado ao usúario que fez a requisição
+- DELETE projects/id/ => deleta um projeto caso ele exista e esteja ligado ao usúario que fez a requisição
 # Documentação
 Para ter mais detalhes das rotas pode ser consultada a documentação disponível no link abaixo:
 https://documenter.getpostman.com/view/9953840/T1LQhmRA
