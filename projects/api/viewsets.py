@@ -67,4 +67,6 @@ class ProjectsViewSet(ModelViewSet):
 
         serializer = ProjectsSerializer(project)
 
-        return Response(serializer.data)
+        return Response({
+            'name': serializer.data['name']
+        })
