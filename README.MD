@@ -2,9 +2,9 @@
 NaversAPI é uma api escrita em python com framework django para criação de navers e projetos.
 
 # Requisitos
-python 3
-django
-django rest framework
+- python 3
+- django
+- django rest framework
 
 # Instalação
 primeiro crie uma pasta onde preferir e clone o projeto:
@@ -40,8 +40,8 @@ Aconselho usar o POSTMAN ou INSOMNIA para testar as rotas
 as rotas disponiveis são: 
 
 ### conta 
-accounts/ => cria um usúario
-login/ => loga na aplicação e retorna o token para navegar
+- accounts/ => cria um usúario
+- login/ => loga na aplicação e retorna o token para navegar
 ### navers
 - GET navers/index/ => retornar lista de navers para um usuario caso ele tenha navers cadastrado
 - GET navers/<id>/show/ => retorna um naver especifico caso ele esteja ligado ao usúario que fez a requisição
