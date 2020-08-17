@@ -67,7 +67,6 @@ class NaversViewSet(ModelViewSet):
             })
 
     def create(self, request):
-
         naver = Navers()
         naver.name = request.data['name']
         naver.birthdate = request.data['birthdate']
@@ -85,7 +84,6 @@ class NaversViewSet(ModelViewSet):
         return Response(serializer.data)
 
     def update(self, request, pk=None):
-
         try:
             navers = Navers.objects.get(pk=pk)
             if navers.user == request.user:
@@ -103,3 +101,18 @@ class NaversViewSet(ModelViewSet):
                 })
         except:
             return Response({'error'})
+
+    def destroy(self, request, pk=None):
+        try:
+            naver = Navers.objects.get(pk=pk)
+            if naver.user == request.user:
+                print(naver)
+                return Response('')
+            else:
+                return Response({
+                    'error': 'This nave not registered for this user'
+                })
+        except:
+            return Response({
+                'error'
+            })
